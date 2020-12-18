@@ -1,9 +1,7 @@
 package com.cho.uiuxsamples.data
 
 import com.cho.uiuxsamples.R
-import com.cho.uiuxsamples.data.models.MailCategoryItem
-import com.cho.uiuxsamples.data.models.MailItem
-import com.cho.uiuxsamples.data.models.MailSimpleItem
+import com.cho.uiuxsamples.data.models.*
 
 
 class DataSource{
@@ -33,12 +31,87 @@ class DataSource{
 
         // Dummy Description
         const val DESC_1 = "Lorem ipsum dolor sit amet"
-        const val DESC_2 = "Lorem ipsum dolor sit amet"
-        const val DESC_3 = "Lorem ipsum dolor sit amet"
-        const val DESC_4 = "Lorem ipsum dolor sit amet"
-        const val DESC_5 = "Lorem ipsum dolor sit amet"
-        const val DESC_6 = "Lorem ipsum dolor sit amet"
-        const val DESC_7 = "Lorem ipsum dolor sit amet"
+
+        fun createNavDataSet(): ArrayList<NavItem>{
+            val navMenu = ArrayList<NavItem>()
+
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_all_inbox_24, "All Inboxes", false, 120)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_person_outline_24, "Social", false, 20)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_outline_local_offer_24, "Promotions", false, 120)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_outline_forum_24, "Forums", true, 5)
+                )
+            )
+            navMenu.add(NavItem(LabelItem("All LABELS")))
+
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_star_border_24, "Starred", false)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_snooze_24, "Snoozed", false)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_outline_send_24, "Sent", false)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_snooze_24, "Scheduled", false)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_outline_drafts_24, "Draft", false, 5)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_all_inbox_24, "All Mails", false, 120)
+                )
+            )
+
+            navMenu.add(NavItem(LabelItem("GOOGLE APPS")))
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_calendar_today_24, "Calendar", false)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_person_outline_24, "Contacts", false)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_outline_settings_24, "Settings", false)
+                )
+            )
+            navMenu.add(
+                NavItem(
+                    MenuItem(R.drawable.ic_baseline_all_inbox_24, "Contacts", false)
+                )
+            )
+
+            return navMenu
+        }
 
         fun createDataSet(): ArrayList<MailItem>{
             val data = ArrayList<MailItem>()
