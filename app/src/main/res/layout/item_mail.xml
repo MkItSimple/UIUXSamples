@@ -28,7 +28,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="TextView"
-        android:textColor="?text_color"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/item_mail_img"
         app:layout_constraintTop_toTopOf="@+id/item_mail_img"
@@ -41,7 +41,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="TextView"
-        android:textColor="?text_sec_color"
+        android:textColor="@color/light_search_bg"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/item_mail_fav"
         app:layout_constraintHorizontal_bias="0.0"
@@ -66,7 +66,7 @@
         app:layout_constraintWidth_default="wrap" />
 
     <TextView
-        android:textColor="?text_color"
+        android:textColor="@color/content_text_color"
         android:id="@+id/item_mail_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

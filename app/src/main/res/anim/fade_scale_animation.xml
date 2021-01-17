@@ -3,16 +3,12 @@
 
     <alpha android:fromAlpha="0.0"
             android:toAlpha="1.0"
-            android:duration="700" />
+            android:duration="1000" />
 
     <scale android:fromXScale="0.0"
             android:fromYScale="0.0"
             android:toXScale="1.0"
             android:toYScale="1.0"
-            android:duration="700"
+            android:duration="1500"
             android:fillBefore="false" />
-
-
-
-
 </set>

@@ -17,12 +17,12 @@ import com.cho.uiuxsamples.SearchActivity
 import com.cho.uiuxsamples.adapters.MailAdapter
 import com.cho.uiuxsamples.adapters.NavAdapter
 import com.cho.uiuxsamples.data.DataSource
-import kotlinx.android.synthetic.main.fragment_anim_sample_c.*
+import kotlinx.android.synthetic.main.fragment_gmail_template.*
 import kotlinx.android.synthetic.main.search_bar.*
 
 
 @Suppress("DEPRECATION")
-class AnimSampleC : Fragment(R.layout.fragment_anim_sample_c){
+class GmailTemplate : Fragment(R.layout.fragment_gmail_template){
 
     private lateinit var mailAdapter: MailAdapter
     private lateinit var navAdapter: NavAdapter

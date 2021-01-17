@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_animations_graph"
+    app:startDestination="@id/templatesHomeFragment">
+    <fragment
+        android:id="@+id/templatesHomeFragment"
+        android:name="com.cho.uiuxsamples.fragments.TemplatesHomeFragment"
+        android:label="TemplatesHomeFragment" >
+        <action
+            android:id="@+id/action_templatesHomeFragment_to_gmailTemplate"
+            app:destination="@id/gmailTemplate" />
+    </fragment>
+    <fragment
+        android:id="@+id/gmailTemplate"
+        android:name="com.cho.uiuxsamples.fragments.GmailTemplate"
+        android:label="GmailTemplate" />
+</navigation>

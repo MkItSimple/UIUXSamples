@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#5482FC</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#258bd6</color>
 
     <color name="blueOrigin">#5482FC</color>
     <color name="blueSecond">#132551</color>
     <color name="blueSoft">#EAEFF9</color>
     <color name="silver">#9F9F9F</color>
 
-    <!-- colors for recyclerview animations  -->
-    <color name="card_bg_color">#f6f6f6</color>
-    <color name="card_bg_dark_color">#0e0e0e</color>
-    <color name="title_text_color">#258bd6</color>
-    <color name="content_text_color">#999da4</color>
-
     <!-- -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-
-    <color name="black">#1E1E1E</color>
-    <color name="white">#ffffff</color>
+    <color name="teal_200">#5482FC</color>
+    <color name="teal_700">#5482FC</color>
 
 
     <!-- google like template colors -->
@@ -32,7 +23,7 @@
     <color name="red">#F96335</color>
     <color name="blue">#008DFC</color>
     <color name="yellow">#FCBF38</color>
-    <color name="green">#21A049</color>
+    <color name="green">#5482FC</color>
 
     <!--    // dark / light theme-->
     <color name="light_bg">#ffffff</color>
@@ -66,4 +57,24 @@
     <!-- colors schema Dark Theme-->
     <color name="dark_main_text" >#F9F9F9</color>
     <color name="dark_second_text" >#EEEEEE</color>
+
+    <!-- Portfolio colors -->
+    <color name="background_light">#ffffff</color>
+    <color name="icon_tint">#888787</color>
+    <color name="nav_selected_color">#ffc107</color>
+    <color name="cv_line_color">#E0E0E0</color>
+    <color name="icon_tint_light">#afafaf</color>
+
+
+    <!-- recyclerview animation -->
+    <color name="card_bg_color">#f6f6f6</color>
+    <color name="card_bg_dark_color">#0e0e0e</color>
+    <color name="title_text_color">#258bd6</color>
+    <color name="content_text_color">#999da4</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <!-- movie template colors -->
+    <color name="text_light_blue">#566f9a</color>
 </resources>

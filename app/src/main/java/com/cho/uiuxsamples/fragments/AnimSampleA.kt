@@ -11,7 +11,6 @@ import com.cho.uiuxsamples.R
 import com.cho.uiuxsamples.adapters.NewAdapter
 import com.cho.uiuxsamples.data.models.NewsItem
 import kotlinx.android.synthetic.main.fragment_anim_sample_a.*
-import kotlinx.android.synthetic.main.item_news.*
 
 @Suppress("DEPRECATION")
 class AnimSampleA : Fragment(){
@@ -47,24 +46,38 @@ class AnimSampleA : Fragment(){
         if (isDark) {
             // dark theme is on
             search_input.setBackgroundResource(R.drawable.search_input_dark_style)
-            root_layout.setBackgroundColor(resources.getColor(R.color.white))
-            container.setBackgroundResource(R.drawable.card_bg_dark)
+            root_layout.setBackgroundColor(resources.getColor(R.color.black))
+//            container.setBackgroundResource(R.drawable.card_bg_dark)
         } else {
             // light theme is on
             search_input.setBackgroundResource(R.drawable.search_input_style)
-            root_layout.setBackgroundColor(resources.getColor(R.color.black))
+            root_layout.setBackgroundColor(resources.getColor(R.color.white))
         }
+
+//        isDark = getThemeStatePref()
+//        if (isDark) {
+//            // dark theme is on
+//            search_input.setBackgroundResource(R.drawable.search_input_dark_style)
+//            root_layout.setBackgroundColor(resources.getColor(R.color.white))
+//            container.setBackgroundResource(R.drawable.card_bg_dark)
+//        } else {
+//            // light theme is on
+//            search_input.setBackgroundResource(R.drawable.search_input_style)
+//            root_layout.setBackgroundColor(resources.getColor(R.color.black))
+//        }
 
         fab_switcher.setOnClickListener {
             isDark = !isDark
             if (isDark) {
                 // dark theme is on
+                root_layout.setBackgroundColor(resources.getColor(R.color.black))
                 search_input.setBackgroundResource(R.drawable.search_input_dark_style)
-                root_layout.setBackgroundColor(resources.getColor(R.color.white))
+
             } else {
                 // light theme is on
+                root_layout.setBackgroundColor(resources.getColor(R.color.white))
                 search_input.setBackgroundResource(R.drawable.search_input_style)
-                root_layout.setBackgroundColor(resources.getColor(R.color.black))
+
             }
 
             if (search.toString().isNotEmpty()){
