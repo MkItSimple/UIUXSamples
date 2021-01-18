@@ -1,30 +1,36 @@
 package com.cho.uiuxsamples.portfolio.cv
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.cho.uiuxsamples.data.models.MailItem
+import com.cho.uiuxsamples.R
+import kotlinx.android.synthetic.main.item_cv.view.*
 
 
-class CVAdapter : RecyclerView.Adapter<CVAdapter.CVViewHolder>() {
-
-    private var mData: List<CVItem> = ArrayList()
-
-    fun submitList(cvItemList: ArrayList<CVItem>){
-        mData = cvItemList
-    }
+class CVAdapter(
+    private var mData: List<CVItem>
+) : RecyclerView.Adapter<CVAdapter.CVViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CVViewHolder {
-        TODO("Not yet implemented")
-    }
-
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        val layout: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_cv, parent, false)
+        return CVViewHolder(layout)
     }
 
     override fun onBindViewHolder(holder: CVViewHolder, position: Int) {
-        //
+        holder.bind(mData[position])
     }
 
-    class CVViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    override fun getItemCount(): Int {
+        return mData.size
+    }
+
+    class CVViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(item: CVItem) = with(itemView) {
+            itemView.item_cv_title.text = item.title
+            itemView.item_cv_desc.text = item.description
+        }
+    }
+
 }

@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.cho.uiuxsamples.AnimationsActivity
 import com.cho.uiuxsamples.MovieHomeActivity
 import com.cho.uiuxsamples.R
+import com.cho.uiuxsamples.portfolio.PortfolioActivity
 import kotlinx.android.synthetic.main.fragment_templates_home.*
 
 class TemplatesHomeFragment : Fragment(R.layout.fragment_templates_home) {
@@ -23,6 +24,11 @@ class TemplatesHomeFragment : Fragment(R.layout.fragment_templates_home) {
         }
 
         btn_2.setOnClickListener {
+            val intent = Intent(context, PortfolioActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_3.setOnClickListener {
             val intent = Intent(context, MovieHomeActivity::class.java)
             startActivity(intent)
         }

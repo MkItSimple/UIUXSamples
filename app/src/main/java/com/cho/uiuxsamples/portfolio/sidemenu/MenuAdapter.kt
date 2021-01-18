@@ -1,20 +1,59 @@
 package com.cho.uiuxsamples.portfolio.sidemenu
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.cho.uiuxsamples.R
+import kotlinx.android.synthetic.main.item_menu.view.*
 
-class MenuAdapter : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
-        TODO("Not yet implemented")
+
+class MenuAdapter(
+    private var mData: List<MenuItem>,
+    private val interaction: Interaction? = null
+) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): MenuViewHolder {
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_menu, parent, false)
+        return MenuViewHolder(view)
     }
+
+    override fun onBindViewHolder(
+        holder: MenuViewHolder,
+        position: Int
+    ) {
+        holder.bind(mData[position])
+    }
+
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return mData.size
     }
 
-    override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
-        TODO("Not yet implemented")
+    inner class MenuViewHolder(
+        itemView: View
+    ) : RecyclerView.ViewHolder(itemView) {
+
+        fun bind(item: MenuItem) = with(itemView) {
+            itemView.item_menu_icon.setImageResource(item.icon)
+
+            if (item.isSelected){
+                itemView.item_menu_selected.visibility = View.VISIBLE
+            } else {
+                itemView.item_menu_selected.visibility = View.GONE
+            }
+
+            itemView.setOnClickListener {
+                interaction?.onSideMenuItemClick(adapterPosition)
+            }
+        }
     }
-    class MenuViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+
+    interface Interaction {
+        fun onSideMenuItemClick(i: Int)
+    }
+
 }

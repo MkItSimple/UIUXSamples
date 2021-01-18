@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MovieHomeActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimaryMovie">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/slider_pager"
@@ -20,6 +20,7 @@
     <com.google.android.material.tabs.TabLayout
         app:tabGravity="center"
         android:id="@+id/indicator"
+        android:background="@color/colorPrimaryMovie"
         app:tabBackground="@drawable/indicator_selector"
         app:tabIndicatorHeight="0dp"
         android:layout_width="match_parent"
@@ -30,7 +31,7 @@
     </com.google.android.material.tabs.TabLayout>
 
     <TextView
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorAccentMovie"
         android:id="@+id/swipe_and_click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -17,8 +17,24 @@
 
     </style>
 
+<!--    <style name="PortfoioTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimaryPortfolio</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDarkPortfolio</item>-->
+<!--        <item name="colorAccent">@color/colorAccentPortfolio</item>-->
+<!--    </style>-->
+
+        <style name="MovieTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimaryMovie</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDarkMovie</item>
+            <item name="colorAccent">@color/colorAccentMovie</item>
+
+            <item name="fab_tint_color">@color/colorAccentMovie</item>
+        </style>
+
+    <!-- Gmail Template Theme -->
     <style name="DarkTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Customize your theme here. -->
 
         <item name="colorPrimary">#202125</item>
         <item name="colorPrimaryDark">#202125</item>
@@ -31,7 +47,6 @@
         <item name="fab_bg_color">@color/dark_fab_color</item>
         <item name="fab_tint_color">@color/dark_fab_tint</item>
         <item name="nav_icon_tint">@color/dark_nav_icon_tint</item>
-
     </style>
 
 

@@ -1,6 +1,3 @@
 package com.cho.uiuxsamples.portfolio.cv
 
-class CVItem(
-    var title: String,
-    var description: String
-)
+class CVItem(var title: String?, var description: String?)

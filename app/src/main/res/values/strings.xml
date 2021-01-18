@@ -11,11 +11,11 @@
 
     <!-- Portfolio Strings -->
     <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
-    <string name="job_name">Graphic Designer &amp; Programmer</string>
-    <string name="lorem_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</string>
-    <string name="name">Bennet\nSebastian</string>
+    <string name="job_name">Android Developer</string>
+    <string name="lorem_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</string>
+    <string name="name">Choreyn\Anania</string>
     <string name="current_job_post">Current Job Post</string>
-    <string name="diploma">Computer Science Diploma</string>
+    <string name="diploma">BSIS BS in Information Systems Diploma</string>
 
 
     <string name="image_description">Image</string>

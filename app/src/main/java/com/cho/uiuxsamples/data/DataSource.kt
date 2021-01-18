@@ -22,7 +22,7 @@ class DataSource{
         val IMG_1: Int = R.drawable.pnggoogle
         val IMG_2: Int = R.drawable.adobe
         val IMG_3: Int = R.drawable.user4
-        val IMG_4: Int = R.drawable.user
+        val IMG_4: Int = R.drawable.ironman_c
         val IMG_5: Int = R.drawable.user2
         val IMG_6: Int = R.drawable.girl0
         val IMG_7: Int = R.drawable.androidstudio
@@ -202,9 +202,23 @@ class DataSource{
                 MailItem(
                     MailSimpleItem(
                         1,
-                        TITLE_8,
+                        "Google Email",
                         DESC_1,
                         IMG_1,
+                        Content_1,
+                        true,
+                        true
+                    )
+                )
+            )
+
+            data.add(
+                MailItem(
+                    MailSimpleItem(
+                        1,
+                        "Choreyn Anania",
+                        DESC_1,
+                        IMG_4,
                         Content_1,
                         true,
                         true
@@ -218,7 +232,7 @@ class DataSource{
                         2,
                         TITLE_8,
                         DESC_1,
-                        R.drawable.usernoimg01,
+                        IMG_4,
                         Content_1
                     )
                 )
@@ -243,7 +257,7 @@ class DataSource{
                         3,
                         TITLE_8,
                         DESC_1,
-                        R.drawable.usernoimg0,
+                        IMG_4,
                         Content_1,
                         true,
                         true

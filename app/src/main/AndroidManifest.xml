@@ -12,11 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
         <activity android:name=".TemplatesActivity"/>
-        <activity android:name=".AnimationsActivity" />
-        <activity android:name=".MovieHomeActivity" />
+        <activity android:name=".AnimationsActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".MovieHomeActivity"
+            android:theme="@style/MovieTheme">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
         <activity android:name=".MovieDetailActivity" />
+        <activity android:name=".portfolio.PortfolioActivity">
+
+        </activity>
+
+
         <activity android:name=".HomeActivity">
              <intent-filter>
              <action android:name="android.intent.action.MAIN" />

@@ -1,20 +1,49 @@
 package com.cho.uiuxsamples.portfolio.portfolio
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.cho.uiuxsamples.R
+import kotlinx.android.synthetic.main.item_portfolio.view.*
 
-class PortfolioAdapter : RecyclerView.Adapter<PortfolioAdapter.PortfolioViewHolder>() {
+class PortfolioAdapter(
+    private var mData: List<PortfolioItem>,
+    private val interaction: Interaction? = null
+) : RecyclerView.Adapter<PortfolioAdapter.PortfolioViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PortfolioViewHolder {
-        TODO("Not yet implemented")
-    }
-
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        val view: View =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_portfolio, parent, false)
+        return PortfolioViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: PortfolioViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.bind(mData[position])
+
     }
-    class PortfolioViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+
+    override fun getItemCount(): Int {
+        return mData.size
+    }
+
+    inner class PortfolioViewHolder(
+        itemView: View
+    ) : RecyclerView.ViewHolder(itemView) {
+
+        fun bind(item: PortfolioItem) = with(itemView) {
+            Glide.with(itemView.context).load(mData[position].image).into(itemView.item_portfolio_img);
+
+            itemView.setOnClickListener {
+                interaction?.onPortfolioItemClick(adapterPosition)
+            }
+        }
+    }
+
+    interface Interaction {
+        fun onPortfolioItemClick(i: Int)
+    }
+
+
 }

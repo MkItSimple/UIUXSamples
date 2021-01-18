@@ -1,7 +1,26 @@
 package com.cho.uiuxsamples.portfolio.portfolio
 
-class PortfolioItem(
-    var image: Int,
-    var title: String,
-    var description: String
-)
+import java.io.Serializable
+
+class PortfolioItem : Serializable {
+    var image = 0
+    var title: String? = null
+    var description: String? = null
+
+    constructor() {}
+    constructor(image: Int) {
+        this.image = image
+    }
+
+    constructor(image: Int, title: String?) {
+        this.image = image
+        this.title = title
+    }
+
+    constructor(image: Int, title: String?, description: String?) {
+        this.image = image
+        this.title = title
+        this.description = description
+    }
+
+}
