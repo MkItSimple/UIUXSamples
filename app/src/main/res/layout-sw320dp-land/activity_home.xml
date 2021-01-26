@@ -21,22 +21,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp" />
-
-    <TextView
-        android:id="@+id/btn_0"
-        android:layout_width="600dp"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text="@string/vise_versa"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:fontFamily="@font/mregular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn" />
+        android:layout_marginTop="60dp" />
 
     <TextView
         android:id="@+id/btn_1"
@@ -52,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_0"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
         android:layout_marginTop="30dp" />
 
     <TextView
